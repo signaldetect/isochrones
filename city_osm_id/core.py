@@ -95,7 +95,6 @@ class CityOsmId(eventer.CityOsmId, effectors.Gate, effectors.Engine):
 
         # Searching for relation in result set
         for result in geo_results:
-            print(result.address, result.raw.get('osm_type'))
             if result.raw.get('osm_type') == 'relation':
                 city = result
                 break
