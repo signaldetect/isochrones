@@ -14,9 +14,22 @@ export TOMTOM_KEY=<YOUR TOMTOM API KEY>
 . _cli/start.sh
 ```
 
-## Using endpoint
+## Using request
 
-URL: `http://<HOST>:<PORT>/api/isochrones.pbf?place=<PLACE NAME>&facility=<FACILITY NAME>&trip_time=<TRIP TIME IN MINUTES>`
+Endpoint:
+
+`GET /api/isochrones.pbf?<parameters>`
+
+Parameters:
+
+* `place` is a place (city) name, e.g. "New York City, NY, USA"
+
+* `facility` is a facility name/type, e.g. "Subway station"
+
+* `trip_time` is a trip (walking) time from a facility, in minutes, e.g. "5"
+
+Note: The process of building a map takes some time, therefore the endpoint
+response may take a long time, so just wait for the file to start downloading.
 
 ## Using simple CLI
 
