@@ -24,11 +24,7 @@ _pypy/
 **.cache/
 
 # Data and cache storage
-data/*.cpg
-data/*.dbf
-data/*.osm
-data/*.pbf
-data/*.shp
-data/*.shx
-cache/*.graphml
-cache/*.json
+data/*
+!data/.gitkeep 
+cache/*
+!data/.gitkeep 
