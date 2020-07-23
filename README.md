@@ -16,7 +16,7 @@ export TOMTOM_KEY=<YOUR TOMTOM API KEY>
 
 ## Using endpoint
 
-URL: `http://<HOST>:<PORT>/api/map?place=<PLACE NAME>&facility=<FACILITY NAME>&trip_time=<TRIP TIME IN MINUTES>`
+URL: `http://<HOST>:<PORT>/api/isochrones.pbf?place=<PLACE NAME>&facility=<FACILITY NAME>&trip_time=<TRIP TIME IN MINUTES>`
 
 ## Using simple CLI
 

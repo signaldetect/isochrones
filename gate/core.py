@@ -94,7 +94,7 @@ class Gate(eventer.Gate, effectors.Engine):
         """
         TODO: Add docstring
         """
-        self._app.add_route(self._requesting, '/api/map')
+        self._app.add_route(self._requesting, '/api/isochrones.pbf')
 
     async def _add_result(self, filepath: str) -> None:
         """
@@ -117,8 +117,7 @@ class Gate(eventer.Gate, effectors.Engine):
         with open(filepath, 'rb') as pbf_file:
             bytes_read = pbf_file.read(PBF_CHUNK_SIZE)
             while bytes_read:
-                for byte in bytes_read:
-                    await response.write(byte)
+                await response.write(bytes(bytes_read))
 
                 bytes_read = pbf_file.read(PBF_CHUNK_SIZE)
 
