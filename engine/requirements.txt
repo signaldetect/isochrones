@@ -2,4 +2,4 @@ git+https://github.com/invertedpoint/radiality.git#egg=radiality==0.7.1
 ogr2pbf==0.0.3
 GDAL==3.1.2
 lxml==4.5.2
-protobuf==3.12.2
+protobuf==3.18.3
