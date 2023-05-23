@@ -1,2 +1,2 @@
 git+https://github.com/invertedpoint/radiality.git#egg=radiality==0.7.1
-requests==2.24.0
+requests==2.31.0
